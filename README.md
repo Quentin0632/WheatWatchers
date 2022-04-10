@@ -49,6 +49,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<div align="justify">
+  
 The project is part of a project to monitor crops using satellite data, undertaken by Nasa's food security and agriculture program: Nasa Harvest. The objective of this program is to provide information that will allow, for example, to anticipate crop failures and therefore agricultural production deficits, or to identify the most efficient practices.   
 
 Commissioned by members of the TRIO research team of the ICube laboratory, our project concerns more specifically the field collection of data (crop images collected by a camera) that should allow the interpretation of satellite images (by training machine learning models).  
@@ -58,6 +60,7 @@ The first challenge is to develop a method to evaluate the distance between the 
 The next step consists in automating the identification of the types of crops and the agricultural practices implemented on these crops from the plantation images.  
 
 The final objective is to obtain a detailed mapping of the crops, based on surveys conducted throughout the year. 
+</div>
 
 ### Software requirements
 
@@ -123,10 +126,6 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 │   └───RIGHT
 │           README.txt
 └───yolov5
-    │   .dockerignore
-    │   .gitattributes
-    │   .gitignore
-    │   .pre-commit-config.yaml
     │   0.8.1'
     │   CONTRIBUTING.md
     │   dataset.yaml
@@ -159,6 +158,7 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
     │   └───train
     └───utils
 </pre>
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
