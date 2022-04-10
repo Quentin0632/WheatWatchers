@@ -100,7 +100,8 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 ## Getting Started
 
 
-<pre>                                                           
+<pre> 
+WheatWatchers
 │   arrayToCSV.py                                                         
 │   boundingBoxesMatching.py              
 │   Calc_coordonnéesGPS.py                
