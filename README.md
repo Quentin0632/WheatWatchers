@@ -4,22 +4,15 @@
 <br />
 <div align="center">
   <a href="https://github.com/Quentin/WheatWatchers">
-    <img src="logo/wheatWatchersLogo.png" alt="Logo" width="100" height="100">
+    <img src="logo/wheatWatchersLogo.png" alt="Logo" width="364" height="205">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Wheat Watchers</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    Innovating methods for agricultural ground data collection and crop assessments using street level images and satellite data: <br />
+    A prototype in Alsace
+ 
   </p>
 </div>
 
@@ -56,24 +49,45 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The project is part of a project to monitor crops using satellite data, undertaken by Nasa's food security and agriculture program: Nasa Harvest. The objective of this program is to provide information that will allow, for example, to anticipate crop failures and therefore agricultural production deficits, or to identify the most efficient practices.   
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Commissioned by members of the TRIO research team of the ICube laboratory, our project concerns more specifically the field collection of data (crop images collected by a camera) that should allow the interpretation of satellite images (by training machine learning models).  
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+The first challenge is to develop a method to evaluate the distance between the photographed object (a fragment of field/crop) and the go-pro camera mounted on a car from which the picture is taken. This step aims at assigning to the collected data an exact location (and not the road where the picture was taken).  
 
+The next step consists in automating the identification of the types of crops and the agricultural practices implemented on these crops from the plantation images.  
 
+The final objective is to obtain a detailed mapping of the crops, based on surveys conducted throughout the year. 
 
-### Built With
+### Software requirements
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python version 3.6+](https://www.python.org/downloads/)
+* [exiftool](https://exiftool.org/)
+* [ffmpeg](https://www.ffmpeg.org/download.html)
+
+### Some Python libraries you will need to include (and to install if it is not already done)
+
+* glob
+* torch
+* cv2
+* os
+* shutil
+* math
+* numpy
+* exif
+* copy
+* csv
+* sys
+* argparse
+* pandas
+* datetime
+* pathlib
+* subprocess
+* json
+* re
+* traceback
+* gpxpy
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,9 +96,69 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
+<pre>                                                           
+│   arrayToCSV.py                                                         
+│   boundingBoxesMatching.py              
+│   Calc_coordonnéesGPS.py                
+│   distanceCarToCrop.py                  
+│   exiftool.exe                          
+│   ffmpeg.exe                       
+│   gf2gv.py                         
+│   log.gpx                          
+│   main.py                     
+│   ML.py                          
+│   videosToFrames.py                               
+├───CSV                            
+├───FRAMES                          
+│   ├───LEFT                         
+│   │       README.txt                          
+│   └───RIGHT
+│           README.txt
+├───RESULTATS
+│       README.txt
+├───VIDEO
+│   ├───LEFT
+│   │       README.txt
+│   └───RIGHT
+│           README.txt
+└───yolov5
+    │   .dockerignore
+    │   .gitattributes
+    │   .gitignore
+    │   .pre-commit-config.yaml
+    │   0.8.1'
+    │   CONTRIBUTING.md
+    │   dataset.yaml
+    │   detect.py
+    │   Dockerfile
+    │   export.py
+    │   hubconf.py
+    │   LICENSE
+    │   README.md
+    │   requirements.txt
+    │   setup.cfg
+    │   train.py
+    │   tutorial.ipynb
+    │   val.py
+    │   yolov5l.pt
+    │   yolov5m.pt
+    │   yolov5s.pt
+    ├───.git
+    │   ├───objects
+    │   └───refs
+    ├───.github
+    │   └───workflows
+    ├───data
+    │   ├───hyps
+    │   ├───images
+    │   └───scripts
+    ├───models
+    │   └───hub
+    ├───runs
+    │   └───train
+    └───utils
+</pre>
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -94,23 +168,6 @@ This is an example of how to list things you need to use the software and how to
   ```
 
 ### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
