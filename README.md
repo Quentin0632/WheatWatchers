@@ -62,6 +62,11 @@ The next step consists in automating the identification of the types of crops an
 The final objective is to obtain a detailed mapping of the crops, based on surveys conducted throughout the year. 
 </div>
 
+### Input and output of the project
+
+You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields.
+After running a script (videosToFrames.py), we get a series of photos from the videos 
+
 ### Software requirements
 
 * [Python version 3.6+](https://www.python.org/downloads/)
@@ -99,7 +104,10 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 <!-- GETTING STARTED -->
 ## Getting Started
 
-
+<div align="justify">
+As the project is mainly coded in Python, it is necessary to have Python version 3.6+. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". <br />
+After this step, the organization of your working directory should look like the following tree:
+</div>
 <pre> 
 WheatWatchers
 │   arrayToCSV.py                                                         
@@ -159,17 +167,6 @@ WheatWatchers
     │   └───train
     └───utils
 </pre>
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
