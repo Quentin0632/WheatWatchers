@@ -55,7 +55,7 @@ The project is part of a project to monitor crops using satellite data, undertak
 
 Commissioned by members of the TRIO research team of the ICube laboratory, our project concerns more specifically the field collection of data (crop images collected by a camera) that should allow the interpretation of satellite images (by training machine learning models).  
 
-The first challenge is to develop a method to evaluate the distance between the photographed object (a fragment of field/crop) and the go-pro camera mounted on a car from which the picture is taken. This step aims at assigning to the collected data an exact location (and not the road where the picture was taken).  
+The first challenge is to develop a method to evaluate the distance between the photographed object (a fragment of field/crop) and the go-pro camera mounted on a car from which the picture is taken. This step aims at assigning to the collected data an exact location (and not the road where the picture was taken). We chose to use a stereovision distance assessment method. So we needed two go-pro.
 
 The next step consists in automating the identification of the types of crops and the agricultural practices implemented on these crops from the plantation images.  
 
@@ -64,8 +64,9 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 
 ### Input and output of the project
 
-You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields.
-After running a script (videosToFrames.py), we get a series of photos from the videos 
+You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields.<br />
+After running a script (videosToFrames.py), we get a series of photos from the videos. <br />
+A last script aims to list the GPS coordinates of the car and those of the fields present on each photo with a label indicating which type of field it is
 
 ### Software requirements
 
