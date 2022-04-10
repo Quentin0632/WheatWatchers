@@ -1,0 +1,1 @@
+Here are created the predictions of the machine learning algorithm on the frames from the video
