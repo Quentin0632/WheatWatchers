@@ -188,11 +188,53 @@ WheatWatchers
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+### Step 1: Drop videos and run <i>videosToFrames.py</i>
+<div align="justify">   
+First, you must drop the videos from the left camera and the right camera in the directories LEFT and RIGHT from VIDEO.<br />
+If there are several videos, as it will be necessary for our code to be able to match the video of the right camera with the left one, it is necessary to classify them in alphabetical order.<br />
+<i>Example:</i>
+</div>
+<pre> 
+└───VIDEO
+    ├───LEFT
+    │   ├───prise11L
+    │   ├───prise12L
+    │   ├───prise21L
+    │   ├───prise31L
+    │   ├───prise41L
+    │   └───prise42L
+    └───RIGHT
+        ├───prise11R
+        ├───prise12R
+        ├───prise21R
+        ├───prise31R
+        ├───prise41R
+        └───prise42R
+</pre> 
+Then you must run the script <i>videosToFrames.py</i>. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
 
-
-
-
-
+### Step 2: Enter the parameters of your cameras and machine learning model and run <i>main.py</i>
+<div align="justify">
+Enter the parameters of your cameras and machine learning model. As our cameras where GoPro Hero 5 and out baseline was 40cm we entered the following but please modify them to fit your setup.<br />
+</div>
+<pre> 
+#Camera holder parameter
+baseline=40      #distance between both cameras in centimeters
+#Camera parameters
+f = 35           #focal lenght
+alpha = 86       #Field of view
+#Machine learning parameters
+confidenceMin=0.4   #minimum level of convidence to identify an object
+modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
+</pre> 
+<div align="justify">
+  You can now run <i>main.py</i>. Two csv files (carData and cropData) must have been created in the directory <b>CSV</b>.
+</div>
+### Step 3: Open [Google My Maps](https://www.google.com/maps/d/u/0/) and create the map
+<div align="justify">
+  Go on [Google My Maps](https://www.google.com/maps/d/u/0/): https://www.google.com/maps/d/u/0/    <br />
+Add a new layer
+</div>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
