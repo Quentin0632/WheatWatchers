@@ -170,19 +170,21 @@ WheatWatchers
 
 ### Brief description of the main files and directories
 
-<div align="justify">
-arrayToCSV.py                                                         
-             
-Calc_coordonnéesGPS.py                
-distanceCarToCrop.py        <br />          
-<i>exiftool.exe</i> and <i>ffmpeg.exe</i> and <i>gf2gv.py</i> and <i>videosToFrames.py</i>: transforms a video into a succession of photos while keeping the GPS information on each image created in the metadata<br />
-<i>ML.py</i>: machine learning identification and saving of the processed pictures with bounding boxes around identified objects in <b>RESULTATS</b><br />             <i>boundingBoxesMatching.py</i>: Match bounding boxes in left and right pictures to know the horizontal shift (disparity for stereovision)<br />
-distanceCarToCrop.py  
-main.py                     
-                       
- 
-
+<div align="justify">        
+* <i>exiftool.exe</i> and <i>ffmpeg.exe</i> and <i>gf2gv.py</i> and <i>videosToFrames.py</i>: transform a video into a succession of photos while keeping the GPS * information on each image created in the metadata<br />
+* <i>ML.py</i>: machine learning identification and saving of the processed pictures with bounding boxes around identified objects in <b>RESULTATS</b><br />
+* <i>boundingBoxesMatching.py</i>: Match bounding boxes in left and right pictures to know the horizontal shift (disparity for stereovision)<br />
+* <i>distanceCarToCrop.py</i>: calculate the distance between the car and the fields (with a correction for our GoPro Hero 5 as any GoPro has a real linear mode and it is necessary for Stereovision) <br /> 
+* <i>Calc_coordonnéesGPS.py</i>: get GPS location of the car and of the fields seen on the photos<br /> 
+* <i>arrayToCSV.py</i>: create a CSV file out of an array  
+* <i>main.py</i>: run all the process (excepted the conversion videos->frames) and create the CSV files with the GPS locations and labels in the directory <b>CSV</b><br />
+* <b>VIDEO</b>: directory where you drop the videos you want to process<br /> 
+* <b>FRAMES</b>: images created after the conversion video -> photos<br /> 
+* <b>RESULTATS</b>: images created after the use of the machine learning model on the images from <b>FRAMES</b><br /> 
+* <b>CSV</b>: csv files created after all the processing with the GPS location of the car and the fields and fields' data<br />
+* <b>yolov5</b>: Here is the yolov5 directory with our machine learning models and all you need to create new ones<br />
 </div>
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
