@@ -175,7 +175,7 @@ WheatWatchers
 ### Brief description of the main files and directories
 
 <div align="justify">        
-* <i>exiftool.exe</i> and <i>ffmpeg.exe</i> and <i>gf2gv.py</i> and <i>videosToFrames.py</i>: transform a video into a succession of photos while keeping the GPS * information on each image created in the metadata<br />
+* <i>exiftool.exe</i> and <i>ffmpeg.exe</i> and <i>gf2gv.py</i> and <i>videosToFrames.py</i>: transform a video into a succession of photos while keeping the GPS information on each image created in the metadata<br />
 * <i>ML.py</i>: machine learning identification and saving of the processed pictures with bounding boxes around identified objects in <b>RESULTATS</b><br />
 * <i>boundingBoxesMatching.py</i>: Match bounding boxes in left and right pictures to know the horizontal shift (disparity for stereovision)<br />
 * <i>distanceCarToCrop.py</i>: calculate the distance between the car and the fields (with a correction for our GoPro Hero 5 as any GoPro has a real linear mode and it is necessary for Stereovision) <br /> 
