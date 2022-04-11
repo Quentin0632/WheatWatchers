@@ -124,17 +124,12 @@ WheatWatchers
 │   videosToFrames.py                               
 ├───CSV                            
 ├───FRAMES                          
-│   ├───LEFT                         
-│   │       README.txt                          
+│   ├───LEFT                                                
 │   └───RIGHT
-│           README.txt
 ├───RESULTATS
-│       README.txt
 ├───VIDEO
 │   ├───LEFT
-│   │       README.txt
 │   └───RIGHT
-│           README.txt
 └───yolov5
     │   0.8.1'
     │   CONTRIBUTING.md
