@@ -72,11 +72,13 @@ After running a script (videosToFrames.py), we get a series of photos from the v
 A last script aims to list the GPS coordinates of the car and those of the fields present on each photo with a label indicating which type of field it is in a CSV file that can by displayed on a map thanks to Google my Maps. <br />
 <br />
 We designed machine learning models from pictures taken in French Alsacian's fields with yolov5. One model can identify French wines while another can identify winter wheat and wether the field is tilled.<br />
-We strongly advise you to create a custom model from your data to detect the object you need to detect. We followed the procedure described by Nicholas Renotte in his video [Deep Drowsiness Detection using YOLO, Pytorch and Python](https://www.youtube.com/watch?v=tFNJGim3FXw&t=912s&ab_channel=NicholasRenotte). Please have a look to his video, he explains how to do this from 30 min. 
 </div>
 
-### Software requirements
+We strongly advise you to create a custom model from your data to detect the object you need to detect. We followed the procedure described by Nicholas Renotte in his video 
+[Deep Drowsiness Detection using YOLO, Pytorch and Python](https://www.youtube.com/watch?v=tFNJGim3FXw&t=912s&ab_channel=NicholasRenotte)
+. Please have a look to his video, he explains how to do this from 30 min. 
 
+### Software requirements
 * [Python version 3.6+](https://www.python.org/downloads/)       
 * [exiftool](https://exiftool.org/)                              
 * [ffmpeg](https://www.ffmpeg.org/download.html)                 
