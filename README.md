@@ -71,6 +71,7 @@ A last script aims to list the GPS coordinates of the car and those of the field
 We designed machine learning models from pictures taken in French Alsacian's fields with yolov5. One model can identify French wines while another can identify winter wheat and wether the field is tilled.<br />
 We strongly advise you to create a custom model from your data to detect the object you need to detect. We will briefly explain how it can be done. We followed the procedure described by Nicholas Renotte in his video [Deep Drowsiness Detection using YOLO, Pytorch and Python](https://www.youtube.com/watch?v=tFNJGim3FXw&t=912s&ab_channel=NicholasRenotte). Please have a look to his video, he explains how to do this from 30 min. 
 </div>
+
 ### Software requirements
 
 * [Python version 3.6+](https://www.python.org/downloads/)       
