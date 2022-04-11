@@ -66,13 +66,17 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 
 You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields.<br />
 After running a script (videosToFrames.py), we get a series of photos from the videos. <br />
-A last script aims to list the GPS coordinates of the car and those of the fields present on each photo with a label indicating which type of field it is
+A last script aims to list the GPS coordinates of the car and those of the fields present on each photo with a label indicating which type of field it is in a CSV file that can by displayed on a map thanks to Google my Maps. <br />
+<br />
+We designed machine learning models from pictures taken in French Alsacian's fields with yolov5. One model can identify French wines while another can identify winter wheat and wether the field is tilled.<br />
+We strongly advise you to create a custom model from your data to detect the object you need to detect. We will briefly explain how it can be done.
 
 ### Software requirements
 
-* [Python version 3.6+](https://www.python.org/downloads/)
-* [exiftool](https://exiftool.org/)
-* [ffmpeg](https://www.ffmpeg.org/download.html)
+* [Python version 3.6+](https://www.python.org/downloads/)       
+* [exiftool](https://exiftool.org/)                              
+* [ffmpeg](https://www.ffmpeg.org/download.html)                 
+* [yolov5](https://github.com/ultralytics/yolov5)                
 
 ### Some Python libraries you will need to include (and to install if it is not already done)
 
