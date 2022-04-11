@@ -250,6 +250,16 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 * The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
 * The website will ask you to select a column to give a title to your markers. You can select image.<br />
 <br />
-We advise you to set an individual style by grouping locations by crop to make the map easier to read.
+We advise you to set an individual style by grouping locations by crop to make the map easier to read.<br />
+Here is an example of the Google My Maps display results you can get:
 </div>
+
+
+
+<br />
+<div align="center">
+  <a href="https://github.com/Quentin/WheatWatchers">
+    <img src="logo/maps.png" alt="Logo" width="1000" height="500">
+  </a>
+  
 <p align="right">(<a href="#top">back to top</a>)</p>
