@@ -25,24 +25,25 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Input-and-output-of-the-project">Input and output of the project</a></li>
-        <li><a href="#Software-requirements">Software requirements</a></li>
-        <li><a href="#Some-Python-libraries-you-will-need-to-include-(and-to-install-if-it-is-not-already-done)">Some Python libraries you will need to include (and to install if it is not already done)</a></li>
+        <li><a href="#input-and-output-of-the-project">Input and output of the project</a></li>
+        <li><a href="#software-requirements">Software requirements</a></li>
+        <li><a href="#some-python-libraries-you-will-need-to-include-and-to-install-if-it-is-not-already-done">Some Python libraries you will need to include (and to install if it is not already done)</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#Creation-of-the-working-directory">Creation of the working directory</a></li>
-        <li><a href="#Brief-description-of-the main-files-and-directories">Brief description of the main files and directories</a></li>
+        <li><a href="#creation-of-the-working-directory">Creation of the working directory</a></li>
+        <li><a href="#brief-description-of-the-main-files-and-directories">Brief description of the main files and directories</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+     <ul>
+       <li><a href="#step-1-drop-videos-and-run-videostoframespy">Step 1: Drop videos and run <i>videosToFrames.py</i></a></li>
+        <li><a href="#step-2-enter-the-parameters-of-your-cameras-and-machine-learning-model-and-run-mainpy">Step 2: Enter the parameters of your cameras and machine learning model and run <i>main.py</i></a></li>
+        <li><a href="#step-3-open-google-my-maps-and-create-the-map">Step 3: Open Google My Maps and create the map</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
@@ -235,7 +236,7 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
   You can now run <i>main.py</i>. Two csv files (carData and cropData) must have been created in the directory <b>CSV</b>.
 </div>
 
-### Step 3: Open [Google My Maps](https://www.google.com/maps/d/u/0/) and create the map
+### Step 3: Open Google My Maps and create the map
 <div align="justify">
 * Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
 * Add a new layer <br />
