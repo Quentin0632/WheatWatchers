@@ -234,7 +234,16 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 ### Step 3: Open [Google My Maps](https://www.google.com/maps/d/u/0/) and create the map
 <div align="justify">
   Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
-Add a new layer
+Add a new layer <br />
+Import cropData.csv <br />
+The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
+  The website will ask you to select a column to give a title to your markers. You can select crop.<br />
+  Add again a new layer <br />
+Import carData.csv <br />
+  The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
+The website will ask you to select a column to give a title to your markers. You can select image.<br />
+<br />
+We advise you to set an individual style by grouping locations by crop to to make the map easier to read.
 </div>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
