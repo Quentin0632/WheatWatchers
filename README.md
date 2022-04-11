@@ -63,14 +63,14 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 </div>
 
 ### Input and output of the project
-
+<div align="justify">
 You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields.<br />
 After running a script (videosToFrames.py), we get a series of photos from the videos. <br />
 A last script aims to list the GPS coordinates of the car and those of the fields present on each photo with a label indicating which type of field it is in a CSV file that can by displayed on a map thanks to Google my Maps. <br />
 <br />
 We designed machine learning models from pictures taken in French Alsacian's fields with yolov5. One model can identify French wines while another can identify winter wheat and wether the field is tilled.<br />
-We strongly advise you to create a custom model from your data to detect the object you need to detect. We will briefly explain how it can be done.
-
+We strongly advise you to create a custom model from your data to detect the object you need to detect. We will briefly explain how it can be done. We followed the procedure described by Nicholas Renotte in his video [Deep Drowsiness Detection using YOLO, Pytorch and Python](https://www.youtube.com/watch?v=tFNJGim3FXw&t=912s&ab_channel=NicholasRenotte). Please have a look to his video, he explains how to do this from 30 min. 
+</div>
 ### Software requirements
 
 * [Python version 3.6+](https://www.python.org/downloads/)       
@@ -108,10 +108,10 @@ We strongly advise you to create a custom model from your data to detect the obj
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
+### Creation of the working directory
 <div align="justify">
-As the project is mainly coded in Python, it is necessary to have Python version 3.6+. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". <br />
-After this step, the organization of your working directory should look like the following tree:
+As the project is mainly coded in Python, it is necessary to have Python version 3.6+. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. In fact transforming a video into a succession of photos is quite easy but we need to keep the GPS location of the cameras on each created pictures from the videos and these softwares help us not to lose them. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". <br />
+After this step, the organization of your working directory should look like the following tree (here WheatWatchers is the given name to our working directory):
 </div>
 <pre> 
 WheatWatchers
@@ -168,16 +168,29 @@ WheatWatchers
     └───utils
 </pre>
 
+### Brief description of the main files and directories
+
+<div align="justify">
+arrayToCSV.py                                                         
+             
+Calc_coordonnéesGPS.py                
+distanceCarToCrop.py        <br />          
+<i>exiftool.exe</i> and <i>ffmpeg.exe</i> and <i>gf2gv.py</i> and <i>videosToFrames.py</i>: transforms a video into a succession of photos while keeping the GPS information on each image created in the metadata<br />
+<i>ML.py</i>: machine learning identification and saving of the processed pictures with bounding boxes around identified objects in <b>RESULTATS</b><br />             <i>boundingBoxesMatching.py</i>: Match bounding boxes in left and right pictures to know the horizontal shift (disparity for stereovision)<br />
+distanceCarToCrop.py  
+main.py                     
+                       
+ 
+
+</div>
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
