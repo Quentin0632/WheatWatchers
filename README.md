@@ -180,7 +180,7 @@ WheatWatchers
 * <i>boundingBoxesMatching.py</i>: Match bounding boxes in left and right pictures to know the horizontal shift (disparity for stereovision)<br />
 * <i>distanceCarToCrop.py</i>: calculate the distance between the car and the fields (with a correction for our GoPro Hero 5 as any GoPro has a real linear mode and it is necessary for Stereovision) <br /> 
 * <i>Calc_coordonnéesGPS.py</i>: get GPS location of the car and of the fields seen on the photos<br /> 
-* <i>arrayToCSV.py</i>: create a CSV file out of an array  
+* <i>arrayToCSV.py</i>: create a CSV file out of an array  <br />
 * <i>main.py</i>: run all the process (excepted the conversion videos->frames) and create the CSV files with the GPS locations and labels in the directory <b>CSV</b><br />
 * <b>VIDEO</b>: directory where you drop the videos you want to process<br /> 
 * <b>FRAMES</b>: images created after the conversion video -> photos<br /> 
