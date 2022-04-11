@@ -210,8 +210,10 @@ If there are several videos, as it will be necessary for our code to be able to 
         ├───prise31R
         ├───prise41R
         └───prise42R
-</pre> 
-Then you must run the script <i>videosToFrames.py</i>. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
+</pre>
+<div align="justify">  
+Then you must run the script <i>videosToFrames.py</i>. You can chooose what framerate is the most suitable for your need. It is necessary to take a framerate large enough to be able to properly trace the path of the car from the GPS coordinates of the cameras. This is necessary to know the tangent in the trajectory and calculate the perpendicular to place the field at the right place. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
+</div>
 
 ### Step 2: Enter the parameters of your cameras and machine learning model and run <i>main.py</i>
 <div align="justify">
@@ -233,15 +235,15 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 
 ### Step 3: Open [Google My Maps](https://www.google.com/maps/d/u/0/) and create the map
 <div align="justify">
-  Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
-Add a new layer <br />
-Import cropData.csv <br />
-The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
-  The website will ask you to select a column to give a title to your markers. You can select crop.<br />
-  Add again a new layer <br />
-Import carData.csv <br />
-  The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
-The website will ask you to select a column to give a title to your markers. You can select image.<br />
+* Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
+* Add a new layer <br />
+* Import cropData.csv <br />
+* The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
+* The website will ask you to select a column to give a title to your markers. You can select crop.<br />
+* Add again a new layer <br />
+* Import carData.csv <br />
+* The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
+* The website will ask you to select a column to give a title to your markers. You can select image.<br />
 <br />
 We advise you to set an individual style by grouping locations by crop to to make the map easier to read.
 </div>
