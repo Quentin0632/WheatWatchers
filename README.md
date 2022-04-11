@@ -230,9 +230,10 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 <div align="justify">
   You can now run <i>main.py</i>. Two csv files (carData and cropData) must have been created in the directory <b>CSV</b>.
 </div>
+
 ### Step 3: Open [Google My Maps](https://www.google.com/maps/d/u/0/) and create the map
 <div align="justify">
-  Go on [Google My Maps](https://www.google.com/maps/d/u/0/): https://www.google.com/maps/d/u/0/    <br />
+  Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
 Add a new layer
 </div>
 <p align="right">(<a href="#top">back to top</a>)</p>
