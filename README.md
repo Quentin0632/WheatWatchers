@@ -240,6 +240,7 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 
 ### Step 3: Open Google My Maps and create the map
 <div align="justify">
+ 
 * Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
 * Add a new layer <br />
 * Import cropData.csv <br />
