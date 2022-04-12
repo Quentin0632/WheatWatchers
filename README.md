@@ -222,7 +222,7 @@ Then you must run the script <i>videosToFrames.py</i>. You can chooose what fram
 
 ### Step 2: Enter the parameters of your cameras and machine learning model and run <i>main.py</i>
 <div align="justify">
-Enter the parameters of your cameras and machine learning model. As our cameras where GoPro Hero 5 and out baseline was 40cm we entered the following but please modify them to fit your setup.<br />
+Enter the parameters of your cameras and machine learning model. As our cameras where GoPro Hero 5 and our baseline was 40cm we entered the following parameters but please modify them to fit your setup.<br />
 </div>
 <pre> 
 #Camera holder parameter
