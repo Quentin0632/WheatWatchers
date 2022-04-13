@@ -67,13 +67,13 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 
 ### Input and output of the project
 <div align="justify">
-You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields. Here is the setup we chose to take videos of the fields with two GoPros mounted on a car:<br />
+You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields. We use a stereovision distance assessment method. Thus, the cameras have to be aligned so that their optical axes are parallel and at a known distance b from each other. The two webcams have the same parameters, i.e. the same focal length f and the same view angle. The formula for the depth in a pixel of an image is as follows: Depth = f×b/disparity, the disparity being the horizontal shift of the pixel between the left and right image. Here is the setup we chose to take videos of the fields with two GoPros mounted on a car:<br />
 
 <p align="center">
   <img src="logo/GoProMount.jpg" width="700"/>
 </p>
   
-  After running a script (<i>videosToFrames.py</i>), we get a series of photos from the videos. We use a stereovision distance assessment method. Thus, the cameras have to be aligned so that their optical axes are parallel and at a known distance b from each other. The two webcams have the same parameters, i.e. the same focal length f and the same view angle. The formula for the depth in a pixel of an image is as follows: Depth = f×b/disparity, the disparity being the horizontal shift of the pixel between the left and right image. <br />
+  After running a script (<i>videosToFrames.py</i>), we get a series of photos from the videos. <br />
   A last script (<i>main.py</i>) aims to list the GPS coordinates of the car and those of the fields present on each photo with a label indicating which type of field it is in a CSV file that can by displayed on a map thanks to Google my Maps. <br />
 <br />
 We designed machine learning models from pictures taken in French Alsacian's fields with yolov5. One model can identify French wines while another can identify winter wheat and wether the field is tilled.<br />
