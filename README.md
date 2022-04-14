@@ -222,7 +222,7 @@ If there are several videos, as it will be necessary for our code to be able to 
         └───prise42R
 </pre>
 <div align="justify">  
-Then you must run the script <i>videosToFrames.py</i>. You can chooose what framerate is the most suitable for your need. It is necessary to take a framerate large enough to be able to properly trace the path of the car from the GPS coordinates of the cameras. This is necessary to know the tangent in the trajectory and calculate the perpendicular to place the field at the right place. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
+Then you must run the script <i>videosToFrames.py</i>. You can choose what framerate is the most suitable for your need. It is necessary to take a framerate large enough to be able to properly trace the path of the car from the GPS coordinates of the cameras. This is necessary to know the tangent in the trajectory and calculate the perpendicular to place the field at the right place. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
 </div>
 
 ### Step 2: Enter the parameters of your cameras and machine learning model and run <i>main.py</i>
