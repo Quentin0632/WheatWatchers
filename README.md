@@ -124,7 +124,7 @@ We strongly advise you to create a custom model from your data to detect the obj
 As the project is mainly coded in Python, it is necessary to have Python version 3.6+. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. In fact transforming a video into a succession of photos is quite easy but we need to keep the GPS location of the cameras on each created pictures from the videos and these softwares help us not to lose them. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". <br />
 After this step, the organization of your working directory should look like the following tree (here WheatWatchers is the given name to our working directory):
 </div>
-<pre> 
+<pre>
 WheatWatchers
 │   arrayToCSV.py                                                         
 │   boundingBoxesMatching.py              
@@ -137,7 +137,9 @@ WheatWatchers
 │   main.py                     
 │   ML.py                          
 │   videosToFrames.py                               
-├───CSV                            
+├───CSV
+│   ├───carData.csv                                                
+│   └───cropData.csv
 ├───FRAMES                          
 │   ├───LEFT                                                
 │   └───RIGHT
