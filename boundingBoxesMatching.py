@@ -5,7 +5,9 @@ Match bounding boxes in left and right pictures to know the horizontal shift (di
 import numpy as np
 import sys
 
-def similarity (box1,box2):
+# Compare the distance between centroïds, the areas and the level of confidence of the 2 bounding boxes. Return a cost number for the optimization
+# This similarity criteria can be optimized.
+def similarity (box1,box2):   
     C1,S1,Cert1,lab1=box1
     C2,S2,Cert2,lab2=box2
     dist=np.sqrt(C1[0]-C2[0])**2
@@ -14,7 +16,7 @@ def similarity (box1,box2):
     cout=dist*Surface*Surete
     return(cout)
 
-
+# This function find the minimal cost between bounding boxes of 2 simultaneous picture in order to find the same object on each.
 def costFunction(allbBoxL,allbBoxR,coutMax,confidenceMin):
     couplesbBox=[]
     bBoxL=[]
