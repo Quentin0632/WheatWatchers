@@ -6,7 +6,7 @@ and it is necessary for Stereovision)
 import ML
 import numpy as np
 import boundingBoxesMatching as BBmatch
-import Calc_coordonnéesGPS as GPS
+import Calc_coordonneesGPS as GPS
 import cv2
 
 def triangulation(widthImage,baseline,f,alpha,horizontalShift):
