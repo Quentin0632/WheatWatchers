@@ -137,7 +137,8 @@ WheatWatchers
 │   main.py                     
 │   ML.py                          
 │   videosToFrames.py  
-|   env_WheatWatchers
+|   env_WheatWatchers.yml
+|   exiftool.exe
 ├───CSV
 │   ├───carData.csv                                                
 │   └───cropData.csv
