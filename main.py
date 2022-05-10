@@ -4,7 +4,7 @@ Run all the process (excepted the conversion videos->frames) and create the CSV 
 
 import glob
 import arrayToCSV as csvConverter
-import Calc_coordonnéesGPS as GPS
+import Calc_coordonneesGPS as GPS
 import ML
 import distanceCarToCrop as carToCrop
 
