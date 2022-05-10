@@ -1,1 +1,0 @@
-This is where the video from the left camera is sampled into a series of photos
