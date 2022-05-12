@@ -122,7 +122,7 @@ We strongly advise you to create a custom model from your data to detect the obj
 ## Getting Started
 ### Creation of the working directory
 <div align="justify">
-As the project is mainly coded in Python, it is necessary to have Python version 3.6+. The project will run on Windows only as it is now but if some modifications are made on the script videosToFrames.py it should run on other OS. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. We  already provided you exxiftool.exe but the other software is to big to be put on the GitHub so you will need to download it. In fact transforming a video into a succession of photos is quite easy but we need to keep the GPS location of the cameras on each created pictures from the videos and these softwares help us not to lose them. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". If you use Anacond Distribution, you can also import our environment and install also install three other libraries gpxpy, torch and torchvision (with the command pip install gpxpy, pip install torch and pip install torchvision in the terminal of Spyder for instance). You must also delete all the README files  <br />
+As the project is mainly coded in Python, it is necessary to have Python version 3.6+. The project will run on Windows only as it is now but if some modifications are made on the script <i>videosToFrames.py</i> it should run on other OS. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. We  already provided you exxiftool.exe but the other software is to big to be put on the GitHub so you will need to download it. In fact transforming a video into a succession of photos is quite easy but we need to keep the GPS location of the cameras on each created pictures from the videos and these softwares help us not to lose them. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". If you use Anacond Distribution, you can also import our environment and install also install three other libraries gpxpy, torch and torchvision (with the command pip install gpxpy, pip install torch and pip install torchvision in the terminal of Spyder for instance). You must also delete all the <i>README.txt</i> files in the directories <b>FRAME/LEFT</b> and <b>FRAME/RIGHT</b>, <b>RESULTAT</b>, <b>VIDEO/LEFT</b> and <b>VIDEO/RIGHT</b>. <br />
 After this step, the organization of your working directory should look like the following tree (here WheatWatchers is the given name to our working directory):
 </div>
 <pre>
@@ -249,7 +249,7 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 </div>
 
 ### Step 3: Open Google My Maps and create the map
-<div align="justify">
+
  
 * Go on Google My Maps: https://www.google.com/maps/d/u/0/edit?mid=1m8w5LpzSB2LvR1-9OtHhAbknZaILvOcD&ll=48.575684540676775%2C7.513197509991101&z=17    <br />
 * Add a new layer <br />
@@ -260,7 +260,7 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 * Import carData.csv <br />
 * The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
 * The website will ask you to select a column to give a title to your markers. You can select image.<br />
-<br />
+
 We advise you to set an individual style by grouping locations by crop to make the map easier to read.<br />
 Here is an example of the Google My Maps display results you can get:
 </div>
