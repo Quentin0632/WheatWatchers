@@ -67,7 +67,7 @@ The final objective is to obtain a detailed mapping of the crops, based on surve
 
 ### Input and output of the project
 <div align="justify">
-You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields. We use a stereovision distance assessment method. Thus, the cameras have to be aligned so that their optical axes are parallel and at a known distance b from each other. The two webcams have the same parameters, i.e. the same focal length f and the same view angle. The formula for the depth in a pixel of an image is as follows: Depth = f×b/disparity, the disparity being the horizontal shift of the pixel between the left and right image. Here is the setup we chose to take videos of the fields with two GoPros mounted on a car:<br />
+You must provide two videos (or a series of videos) taken with two camera that have been placed on the roof of a car while driving near the fields. The camera must . We use a stereovision distance assessment method. Thus, the cameras have to be aligned so that their optical axes are parallel and at a known distance b from each other. The two webcams have the same parameters, i.e. the same focal length f and the same view angle. The formula for the depth in a pixel of an image is as follows: Depth = f×b/disparity, the disparity being the horizontal shift of the pixel between the left and right image. Here is the setup we chose to take videos of the fields with two GoPros mounted on a car:<br />
 
 <p align="center">
   <img src="logo/GoProMount.jpg" width="700"/>
@@ -84,6 +84,7 @@ We strongly advise you to create a custom model from your data to detect the obj
 . Please have a look to his video, he explains how to do this from 30 min. 
 
 ### Software requirements
+* Windows OS
 * [Python version 3.6+](https://www.python.org/downloads/)       
 * [exiftool](https://exiftool.org/)                              
 * [ffmpeg](https://www.ffmpeg.org/download.html)                 
@@ -121,7 +122,7 @@ We strongly advise you to create a custom model from your data to detect the obj
 ## Getting Started
 ### Creation of the working directory
 <div align="justify">
-As the project is mainly coded in Python, it is necessary to have Python version 3.6+. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. In fact transforming a video into a succession of photos is quite easy but we need to keep the GPS location of the cameras on each created pictures from the videos and these softwares help us not to lose them. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". <br />
+As the project is mainly coded in Python, it is necessary to have Python version 3.6+. The project will run on Windows only as it is now but if some modifications are made on the script videosToFrames.py it should run on other OS. After having cloned or downloaded the project, you have only a part of what is needed for its proper functioning. You need to download the exiftool and ffmpeg software and you need to put the exiftool.exe and ffmpeg.exe executables in the working directory. We  already provided you exxiftool.exe but the other software is to big to be put on the GitHub so you will need to download it. In fact transforming a video into a succession of photos is quite easy but we need to keep the GPS location of the cameras on each created pictures from the videos and these softwares help us not to lose them. It is also necessary to install all the Python libraries indicated in the section "Some Python libraries you will need to include". If you use Anacond Distribution, you can also import our environment and install also install three other libraries gpxpy, torch and torchvision (with the command pip install gpxpy, pip install torch and pip install torchvision in the terminal of Spyder for instance). <br />
 After this step, the organization of your working directory should look like the following tree (here WheatWatchers is the given name to our working directory):
 </div>
 <pre>
@@ -226,7 +227,7 @@ If there are several videos, as it will be necessary for our code to be able to 
         └───prise42R
 </pre>
 <div align="justify">  
-Then you must run the script <i>videosToFrames.py</i>. You can choose what framerate is the most suitable for your need. It is necessary to take a framerate large enough to be able to properly trace the path of the car from the GPS coordinates of the cameras. This is necessary to know the tangent in the trajectory and calculate the perpendicular to place the field at the right place. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
+Then you must run the script <i>videosToFrames.py</i>. You can choose what framerate is the most suitable for your need but it must be less than 1. It is necessary to take a framerate large enough to be able to properly trace the path of the car from the GPS coordinates of the cameras. So please take at least one photo every 5 meters This is necessary to know the tangent in the trajectory and calculate the perpendicular to place the field at the right place. You should now have pictures in the directories RIGHT and LEFT from the directory FRAMES.
 </div>
 
 ### Step 2: Enter the parameters of your cameras and machine learning model and run <i>main.py</i>
