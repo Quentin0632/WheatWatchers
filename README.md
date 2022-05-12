@@ -133,8 +133,7 @@ WheatWatchers
 │   distanceCarToCrop.py                  
 │   exiftool.exe                          
 │   ffmpeg.exe                       
-│   gf2gv.py                         
-│   log.gpx                          
+│   gf2gv.py                                                  
 │   main.py                     
 │   ML.py                          
 │   videosToFrames.py  
