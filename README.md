@@ -251,7 +251,7 @@ modelPath='yolov5/runs/train/exp10/weights/last.pt'   #path to our model
 ### Step 3: Open Google My Maps and create the map
 <div align="justify">
  
-* Go on Google My Maps: https://www.google.com/maps/d/u/0/    <br />
+* Go on Google My Maps: https://www.google.com/maps/d/u/0/edit?mid=1m8w5LpzSB2LvR1-9OtHhAbknZaILvOcD&ll=48.575684540676775%2C7.513197509991101&z=17    <br />
 * Add a new layer <br />
 * Import cropData.csv <br />
 * The website will ask you to select the columns to place the markers. You can select latitude and longitude.<br />
